@@ -1,8 +1,16 @@
+
 # MISC transpiler related benchmarks
 
 exploration of various es6 -> es5(3) transpilation options. Currently just very
 basic benchmark information.
 
+
+### usage
+
+```
+bench.sh samples/controller.js
+bench.sh samples/simple-export-default-class.js
+```
 #### testing transpile.js
 
 ```
