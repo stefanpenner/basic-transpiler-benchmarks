@@ -1,13 +1,10 @@
 var fs = require('fs');
 var file = process.argv[2];
 var input = fs.readFileSync(file).toString();
-var esnext = require('esnext').compile;
 var traceur = require('traceur');
 var to5 = require('6to5');
 var recast = require('recast');
 var esprima = require('esprima-fb');
-var escodegen = require('escodegen');
-var esotope = require('esotope');
 var acorn = require('acorn');
 
 require('./bench')([
