@@ -16,6 +16,7 @@
     "esnext": "^0.13.0",
     "esotope": "git://github.com/inikulin/esotope",
     "esprima-fb": "^8001.1001.0-dev-harmony-fb",
+    "jstransform": "^8.2.0",
     "node-v8-clone": "^0.6.2",
     "recast": "^0.9.8",
     "traceur": "0.0.79"

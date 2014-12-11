@@ -1,5 +1,5 @@
 var fs = require('fs');
-var file = process.argv[1];
+var file = process.argv[2];
 var input = fs.readFileSync(file).toString();
 var esnext = require('esnext').compile;
 var traceur = require('traceur');
