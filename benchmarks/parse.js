@@ -7,7 +7,7 @@ var recast = require('recast');
 var esprima = require('esprima-fb');
 var acorn = require('acorn');
 
-require('./bench')([
+require('../bench')([
   { name: 'recast parse', fn: function() {
     return recast.parse(input);
   }},

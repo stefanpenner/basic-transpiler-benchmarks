@@ -13,14 +13,14 @@ function log(message) {
 module.exports = function(suites) {
   var suite = new Benchmark.Suite();
 
-  log('testing');
+  log('running...');
   suites.forEach(function(s) {
-    log('- ' + s.name);
+    // log('- ' + s.name);
     suite.add(s.name, s.fn);
   });
 
   suite.on('cycle', function(event) {
-    log(String(event.target));
+    log('  - ' + String(event.target));
   })
   .on('complete', function() {
     log('Fastest is ' + this.filter('fastest').pluck('name'));

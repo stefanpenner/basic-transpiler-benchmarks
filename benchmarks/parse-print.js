@@ -15,7 +15,7 @@ var acorn = require('acorn');
 // console.log(esotope.generate(acorn.parse(input, { ecmaVersion: 6 })));
 // console.log(escodegen.generate(acorn.parse(input, { ecmaVersion: 6 })));
 
-require('./bench')([
+require('../bench')([
   { name: 'recast parse+print', fn: function() {
     return recast.print(recast.parse(input));
   }},
