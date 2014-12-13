@@ -14,7 +14,7 @@ var recast = require('recast');
 var fs = require('fs');
 var file = process.argv[2];
 var input = fs.readFileSync(file).toString();
-var ast = recast.parse(ast);
+var ast = recast.parse(input);
 
 // console.log(es6ArrowFunction(ast));
 // console.log(es6Class(ast));
