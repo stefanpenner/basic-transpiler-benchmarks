@@ -11,6 +11,12 @@ basic benchmark information.
 bench.sh samples/controller.js
 bench.sh samples/simple-export-default-class.js
 ```
+
+```
+node benchmarks/esnext-transform es6-arrow-function test-input/*
+node benchmarks/esnext-transform <name-of-transform> <...inputs files>
+```
+
 #### testing transpile.js
 
 ```
