@@ -7,14 +7,21 @@ basic benchmark information.
 
 ### usage
 
+run all benchmarks on some file (not really useful)
 ```
 bench.sh samples/controller.js
 bench.sh samples/simple-export-default-class.js
 ```
 
+run a specific esnext transform on one or more files (very useful)
 ```
 node benchmarks/esnext-transform es6-arrow-function test-input/*
 node benchmarks/esnext-transform <name-of-transform> <...inputs files>
+```
+
+run various transpile toolchains against variable input
+```
+node benchmarks/transpile.js  test-input/*
 ```
 
 #### testing transpile.js
