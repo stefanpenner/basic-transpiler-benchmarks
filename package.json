@@ -11,6 +11,7 @@
   "devDependencies": {
     "6to5": "^1.14.17",
     "acorn": "git://github.com/marijnh/acorn",
+    "benchmark": "^1.0.0",
     "es6-arrow-function": "^0.6.2",
     "es6-class": "^0.9.2",
     "es6-computed-properties": "0.0.2",
