@@ -27,10 +27,10 @@
     "esnext": "^0.13.0",
     "esnext-ee": "git://github.com/stefanpenner/esnext#esprima-esotope",
     "esotope": "^1.4.2",
-    "esprima-fb": "^8001.1001.0-dev-harmony-fb",
+    "esprima-fb": "^8001.2001.0-dev-harmony-fb",
     "jstransform": "^8.2.0",
     "node-v8-clone": "^0.6.2",
-    "recast": "^0.9.8",
+    "recast": "git://github.com/chadhietala/recast#esprima-bump",
     "regenerator": "^0.8.0",
     "regexpu": "^0.3.0",
     "traceur": "0.0.79"

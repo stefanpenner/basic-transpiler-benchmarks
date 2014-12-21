@@ -21,7 +21,7 @@ require('../bench')([
   }},
 
   { name: 'esprima parse + escodegen generate', fn: function() {
-    return escodegen.generate(esprima.parse(input));
+    return escodegen.generate(esprima.parse(input, { sourceType: 'module' }));
   }},
 
   { name: 'acorn parse + esotope generate', fn: function() {
