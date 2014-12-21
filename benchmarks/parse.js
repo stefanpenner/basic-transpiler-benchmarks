@@ -19,6 +19,8 @@ require('../bench')([
   }},
 
   { name: 'esprima parse', fn: function() {
-    return esprima.parse(input);
+    return esprima.parse(input,{
+      sourceType: 'module'
+    });
   }}
 ]);
