@@ -17,8 +17,8 @@ var esperanto = require('esperanto');
 
 require('../bench')([
   { name: 'traceur',          fn: function() { return traceur.compile(input, { }); } },
-  { name: '6to5 (AMD)',       fn: function() { return to5.transform(input,   { modules: 'common' }).code; } },
-  { name: '6to5 (CJS)',       fn: function() { return to5.transform(input,   { modules: 'amd'    }).code; } },
+  { name: '6to5 (AMD)',       fn: function() { return to5.transform(input,   { whitelist: [ 'modules' ], modules: 'common' }).code; } },
+  { name: '6to5 (CJS)',       fn: function() { return to5.transform(input,   { whitelist: [ 'modules' ], modules: 'amd'    }).code; } },
   { name: 'esperanto (AMD)',  fn: function() { return esperanto.toAmd(input, {}).code; } },
   { name: 'esperanto (CJS) ', fn: function() { return esperanto.toCjs(input, {}).code; } },
 ]);
