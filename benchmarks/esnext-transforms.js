@@ -41,5 +41,5 @@ require('../bench')([
   { name: 'es6-rest-params',         fn: function() { return es6RestParams(ast);         }},
   { name: 'es6-spread',              fn: function() { return es6Spread(ast);             }},
   { name: 'es6-templates',           fn: function() { return es6Templates(ast);          }},
-  { name: 'regexpu',                 fn: function() { return regexpu(ast);                    }},
+  { name: 'regexpu',                 fn: function() { return regexpu(ast);               }},
 ]);
