@@ -37,7 +37,7 @@ require('../bench')([
      });
      result.code;
      result.map;
-     return resu;t;
+     return result;
   } },
   { name: '6to5 (CJS)', fn: function() {
     var result = to5.transform(input, {
