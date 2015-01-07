@@ -23,6 +23,7 @@ require('../bench')([
        sourceMapFile: 'controller.js',
        sourceMapSource: 'input.js'
     });
+    // this isn't configured correctly: TODO: configure it correctly...
     result.code;
     result.map;
     return result;
