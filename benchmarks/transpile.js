@@ -8,7 +8,6 @@ var recast = require('recast');
 var es6ClassVisitors = require('jstransform/visitors/es6-class-visitors').visitorList;
 var fs = require('fs');
 var jst = require('jstransform');
-var esnextee = require('esnext-ee').compile;
 
 // console.log(esnext(input));
 // console.log(esnextee(input));
@@ -22,7 +21,6 @@ var esnextee = require('esnext-ee').compile;
 
 require('../bench')([
   { name: 'esnext',    fn: function() { return esnext(input).code; } }, // needs a module step still
-  { name: 'esnext-ee', fn: function() { return esnextee(input); } }, // needs a module step still
   { name: 'traceur',   fn: function() { return traceur.compile(input, { }); } },
   { name: '6to5',      fn: function() { return to5.transform(input, { }).code; } },
   { name: 'jst',       fn: function() { return jst.transform(es6ClassVisitors, input).code; } }, // needs a module step still

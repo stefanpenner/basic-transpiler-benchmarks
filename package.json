@@ -25,7 +25,6 @@
     "es6-templates": "^0.2.0",
     "escodegen": "git://github.com/estools/escodegen",
     "esnext": "^0.13.0",
-    "esnext-ee": "git://github.com/stefanpenner/esnext#esprima-esotope",
     "esotope": "^1.4.2",
     "esprima-fb": "^8001.2001.0-dev-harmony-fb",
     "jstransform": "^8.2.0",
@@ -36,6 +35,8 @@
     "traceur": "0.0.79"
   },
   "dependencies": {
+    "es6-module-transpiler": "^0.9.6",
+    "esperanto": "^0.5.10",
     "esprima": "git://github.com/facebook/esprima"
   }
 }
